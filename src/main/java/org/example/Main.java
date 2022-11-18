@@ -7,7 +7,11 @@ public class Main {
     private static final Set<Character> ROMAN_DIGITS = Set.of('I', 'V', 'X');
 
     public static void main(String[] args) throws Exception {
-        System.out.println(calc("7 / 3"));
+        Scanner scanner = new Scanner(System.in);
+        String expression = scanner.nextLine();
+        if (expression != null) {
+            System.out.println(calc(expression));
+        }
     }
 
     public static String calc(String input) throws Exception {
